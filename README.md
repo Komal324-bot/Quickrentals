@@ -1,7 +1,10 @@
 # Quickrentals
 
-Quickrentals is a website that enables a small-scale manufacturer to rent their machinery equipment online made using angularJS, Springboot, and JWT authentication.
-
+* Quickrentals is a website that enables a small-scale manufacturer to rent their machinery equipment online using AngularJS, Springboot, and JWT authentication.
+* This project uses Cloudinary to store images uploaded by sellers in the database.
+* User can register and then access their accounts and rent a product.
+* The UI experience of the app is minimal
+* On logging in, users can see the recommended products for them.
 **Login Page**
 <img width="944" alt="Screenshot 2024-01-20 204327" src="https://github.com/Komal324-bot/Quickrentals/assets/72390027/b039daa4-c0b9-4f58-bce4-bce644f00a53">
 **Homepage**
