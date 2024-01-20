@@ -1,0 +1,56 @@
+<mat-grid-list cols="9" rowHeight="80px" class="navbar-grid">
+  <mat-grid-tile colspan="2" class="navbar-icon">
+    <a routerLink="/">
+      <img class="navbar-icon-img" src="assets/logo.png" alt="Logo">
+    </a>
+    <div class="logo-label">Machinery Equipment Rental</div>
+  </mat-grid-tile>
+ 
+</mat-grid-list>
+
+<br>
+<div class="registration-container">
+  <div class="image-container">
+    <img src="assets/login.png" alt="Login Image" />
+  </div>
+<div class="login-container">
+    <h1>LOGIN</h1>
+   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="username">Username</label>
+        <input formControlName="username" type="text" placeholder="Enter your username" />
+        <div class="valid-errors" *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched">
+          Username is required.
+        </div>
+      </div>
+    
+      <div>
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" placeholder="Enter your email" />
+        <div *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched">
+          Email is required.
+        </div>
+        <div class="valid-errors" *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched">
+          Invalid email format.
+        </div>
+      </div>
+    
+      <div>
+        <label for="password">Password</label>
+        <input formControlName="password" type="password" placeholder="Enter your password" />
+        <div class="valid-errors" *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+          Password is required.
+        </div>
+      </div>
+    
+      <button type="submit" [disabled]="loginForm.invalid">Sign in</button>
+    </form>
+    
+
+   </div>
+   </div>
+   <br>
+   <br>
+   <br>
+   <app-footer></app-footer>
+  

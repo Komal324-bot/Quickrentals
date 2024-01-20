@@ -1,0 +1,32 @@
+<mat-toolbar class="category">
+  <!-- <div class="logo">
+    <img src="" alt="Logo">
+  </div> -->
+  <div class="category-links">
+    <a mat-button routerLink="/building">Building Material</a>
+    <a mat-button routerLink="/electronics">Electronics</a>
+    <a mat-button routerLink="/pharma">Pharmaceutical Equipment</a>
+    <a mat-button routerLink="/medical">Medical Equipment</a>
+    <a mat-button routerLink="/industrial">Industrial Plant</a>
+  </div>
+  <div class="right-links">
+    <a mat-icon-button routerLink="">
+      <mat-icon class="icon">home</mat-icon>
+    </a>
+    <a mat-icon-button routerLink="/seller">
+      <mat-icon class="icon">store</mat-icon>
+    </a>
+    <div class="icon-container" *ngIf="isLoggedIn"  style="margin-right: 60px;">
+      <div class="icon">
+        <img src="assets/icon.png" alt="Icon">
+      </div>
+      <div  class="dropdown">
+        <button class="dropdown-button">Hi {{newUser.username}} </button>
+        <div  class="dropdown-content">
+          <a routerLink="/profile">Profile</a>
+          <a href="#" (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </mat-toolbar>

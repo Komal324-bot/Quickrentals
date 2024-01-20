@@ -1,0 +1,44 @@
+<mat-grid-list cols="9" rowHeight="80px" class="navbar-grid">
+  <mat-grid-tile colspan="1" class="navbar-icon">
+    <a routerLink="/">
+      <img class="navbar-icon-img" src="assets/logo.png" alt="Logo of Your App">
+    </a>
+  </mat-grid-tile>
+
+
+  <!-- <mat-grid-tile colspan="2">
+    <mat-form-field class="search-bar" appearance="outline">
+      <input matInput placeholder="Search Location">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </mat-grid-tile> -->
+
+  <mat-grid-tile colspan="4" >
+    <mat-form-field class="search-bar" appearance="outline">
+            <input matInput type="text" [(ngModel)]="formdata" placeholder="Search Products">
+            <button mat-icon-button matSuffix (click)="onSubmit()">
+            <mat-icon matSuffix>search</mat-icon>
+        </button>
+      </mat-form-field>
+</mat-grid-tile>
+
+  <!-- <mat-grid-tile colspan="3">
+    <mat-form-field class="search-bar" appearance="outline">
+      <input matInput placeholder="Search">
+    
+        <mat-icon matSuffix>search</mat-icon>
+      
+    </mat-form-field>
+  </mat-grid-tile> -->
+
+
+
+  <mat-grid-tile colspan="2" class="navbar-buttons">
+    <!-- Display login and register buttons if not logged in -->
+    <button *ngIf="!isLoggedIn" routerLink="/login" mat-raised-button color="primary">LOGIN</button>
+    <button *ngIf="!isLoggedIn" routerLink="/register" mat-raised-button color="primary">REGISTER</button>
+    
+    <!-- Display logout button if logged in -->
+    <button *ngIf="isLoggedIn" id="logoutButton" mat-raised-button color="primary" (click)="logout()">LOGOUT</button>
+  </mat-grid-tile>
+</mat-grid-list>

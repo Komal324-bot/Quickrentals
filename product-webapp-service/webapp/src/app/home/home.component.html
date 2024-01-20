@@ -1,0 +1,103 @@
+
+<app-navbar ></app-navbar>
+<app-navbar2></app-navbar2>
+
+
+<div class="featured-category">
+  <div class="container">
+    <h3 class="featured-category-title">Featured Category</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <a routerLink="/building" class="card-link">
+          <div class="category-card">
+            <img class="category-image" src="assets/building.png" alt="Building Image">
+            <div class="category-title">Building Material</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a routerLink="/electronics" class="card-link">
+          <div class="category-card">
+            <img class="category-image" src="assets/electronics.png" alt="Electronics Image">
+            <div class="category-title">Electronics</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a routerLink="/medical" class="card-link">
+          <div class="category-card">
+            <img class="category-image" src="assets/medical.png" alt="Medical Image">
+            <div class="category-title">Medical Equipment</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-container">
+ <ng-container *ngFor="let chunk of jsonData | chunk: 3">
+      <div class="card-row">
+        <mat-card *ngFor="let cardData of chunk" class="example-card">
+          <div class="card-content">
+            <div class="image-container">
+              <img class="card-image" [src]="cardData.imageUrl" />
+            </div>
+            <div class="content">
+              <p><b>{{ cardData.productName }}</b></p>
+              <div class="mt-3">
+                <p>Rs.{{ cardData.price }}</p>
+              </div>
+              <br>
+              <div class="rent">
+                <button style="width: 200px; background-color:#55C2C3; color:white" routerLink="/productDescription/{{cardData.id}}">Rent Now</button>
+              </div>
+              
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </ng-container>
+</div>
+<div class="featured-category">
+  <div class="container">
+    <h3 class="featured-category-title">Recommended Products</h3>
+    <div class="card-container">
+     
+     </div>
+    </div>
+    </div>
+    <ng-container *ngFor="let chunk of recommendationData  | chunk: 3">
+      <div class="card-row">
+        <mat-card *ngFor="let cardData of chunk" class="example-card">
+          <div class="card-content">
+            <div class="image-container">
+              <img class="card-image" [src]="cardData.imageUrl" />
+            </div>
+            <div class="content">
+              <p><b>{{ cardData.productName }}</b></p>
+              <div class="mt-3">
+                <p>Rs.{{ cardData.price }}</p>
+              </div>
+              <div class="mt-3">
+                <p>Location : {{ cardData.address }}</p>
+              </div>
+              <br>
+              <div class="rent">
+                <button style="width: 200px; background-color:#55C2C3; color:white" routerLink="/productDescription/{{cardData.id}}">Rent Now</button>
+              </div>
+              
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </ng-container>
+
+
+<app-footer></app-footer>
+      
+ 
+  
+ 
+
+  

@@ -1,0 +1,73 @@
+<app-navbar2></app-navbar2>
+<br>
+
+<div class="add-product">
+  <h3>Add your Product</h3>
+  
+  <form [formGroup]="productForm" class="common-form">
+    <input type="text" class="form-input" placeholder="Seller Name" formControlName="sellerName" />
+    <div  class="valid-errors" *ngIf="productForm.get('sellerName')?.hasError('required') && productForm.get('sellerName')?.touched">
+      Seller Name is required.
+    </div>
+  
+    <input type="email" class="form-input" placeholder="Email Address" formControlName="sellerEmail" />
+    <div class="valid-errors" *ngIf="productForm.get('sellerEmail')?.hasError('required') && productForm.get('sellerEmail')?.touched">
+      Email is required.
+    </div>
+    <div  class="valid-errors" *ngIf="productForm.get('sellerEmail')?.hasError('email') && productForm.get('sellerEmail')?.touched">
+      Invalid email format.
+    </div>
+  
+    <input type="text" class="form-input" placeholder="Product Name" formControlName="productName" />
+    <div  class="valid-errors"  *ngIf="productForm.get('productName')?.hasError('required') && productForm.get('productName')?.touched">
+      Product Name is required.
+    </div>
+  
+    <input type="number" class="form-input" placeholder="Product Price" formControlName="price" />
+    <div  class="valid-errors"  *ngIf="productForm.get('price')?.hasError('required') && productForm.get('price')?.touched">
+      Product Price is required.
+    </div>
+    <div class="valid-errors"  *ngIf="productForm.get('price')?.hasError('min') && productForm.get('price')?.touched">
+      Product Price must be a positive value.
+    </div>
+  
+    <input type="number" class="form-input" placeholder="Product Quantity" formControlName="quantity" />
+    <div  class="valid-errors" *ngIf="productForm.get('quantity')?.hasError('required') && productForm.get('quantity')?.touched">
+      Product Quantity is required.
+    </div>
+    <div class="valid-errors"  *ngIf="productForm.get('quantity')?.hasError('min') && productForm.get('quantity')?.touched">
+      Product Quantity must be at least 1.
+    </div>
+  
+    <input type="text" class="form-input" placeholder="Address" formControlName="address" />
+    <div  class="valid-errors" *ngIf="productForm.get('address')?.hasError('required') && productForm.get('address')?.touched">
+      Address is required.
+    </div>
+  
+    <textarea class="form-input" placeholder="Product Description" formControlName="description"></textarea>
+    <div class="valid-errors" *ngIf="productForm.get('description')?.hasError('required') && productForm.get('description')?.touched">
+      Product Description is required.
+    </div>
+  
+    <select class="form-input" formControlName="category">
+      <option value="" disabled style="color: #999;">Select a category</option>
+      <option value="Building Material">Building Material</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Pharmaceutical Equipment">Pharmaceutical Equipment</option>
+      <option value="Medical Equipment">Medical Equipment</option>
+      <option value="Industrial Plant">Industrial Plant</option>
+    </select>
+    <div *ngIf="productForm.get('category')?.hasError('required') && productForm.get('category')?.touched">
+      Category is required.
+    </div>
+  
+    <button id="upload_widget" (click)="openWidget()" class="cloudinary-button">
+      Upload Image
+    </button>
+  </form>
+  <br>
+  <div class="add">
+    <button class="form-button" (click)="addproduct()"><b>Add Product</b></button>
+  </div>
+</div>
+  <app-footer></app-footer>

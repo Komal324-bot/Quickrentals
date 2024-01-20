@@ -1,0 +1,55 @@
+.navbar-grid {
+    background-color: #f2f5f3;
+    /* margin: 10px;  */
+  }
+  
+  .navbar-icon-img {
+    height: 200px;
+    padding-top: 30px;
+
+  }
+  
+  .search-bar {
+    width: 90%;
+    margin-top: 25px; 
+    align-items: center;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 310px; 
+    margin-right: 0;
+    padding-right: 0;
+  }
+  
+  .navbar-buttons button {
+    margin-right: 6px;
+  }
+  
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+    margin: 10 auto; /* Center the form field horizontally */
+  }
+  
+  .search-bar mat-form-field {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .search-bar input {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+  }
+  
+  
+ 
+  

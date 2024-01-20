@@ -1,0 +1,360 @@
+
+
+
+
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+
+
+}
+
+
+/* Style for the login form heading */
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* Style for the form fields */
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+
+/* Style for labels */
+.login-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+/* Style for input fields */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.navbar-icon-img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+
+.login-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #55C2C3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Hover effect for the submit button */
+.login-container button[type="submit"]:hover {
+  background-color:#2d9597 ;
+  margin-top: 10px !important;
+}
+/* Style for the entire registration container */
+.registration-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+}
+
+
+/* Style for the image container */
+.image-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;}
+
+
+.form-container {
+  flex: 2;
+  padding: 20px;
+}
+
+
+.navbar-grid {
+  background-color: #dde9ea;
+  /* margin: 10px;  */
+}
+
+
+.navbar-icon-img {
+  height: 120px;
+}
+
+
+.search-bar {
+  width: 90%;
+  margin-top: 25px; /* Adjust the margin as needed */
+}
+
+
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 950px; /* Adjust the margin as needed */
+
+
+}
+
+
+.navbar-buttons button {
+  margin-right: 6px;
+}
+.navbar-grid {
+  margin-bottom: 10px;
+}
+
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width:200px;
+}
+
+
+.navbar-icon-img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+.logo-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #1d63a9; /* Adjust color as needed */
+  text-shadow: 2px 2px 4px rgb(181, 188, 195);
+}
+
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+
+.nav-button {
+  display: flex;
+  align-items: center;
+}
+
+
+.icon {
+  font-size: 24px;
+}
+
+
+.button-label {
+  margin-left: 5px;
+}
+element.style{
+  width: 400px;
+}
+
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+
+
+}
+
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* Style for the form fields */
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+
+/* Style for labels */
+.login-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+/* Style for input fields */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.login-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #55C2C3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.login-container button[type="submit"]:hover {
+  background-color:#2d9597 ;
+  margin-top: 10px !important;
+}
+/* Style for the entire registration container */
+.registration-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+}
+
+
+/* Style for the image container */
+.image-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;}
+
+.form-container {
+  flex: 2;
+  padding: 20px;
+}
+
+
+.navbar-grid {
+  background-color: #dde9ea;
+  /* margin: 10px;  */
+}
+
+
+.navbar-icon-img {
+  height: 120px;
+}
+
+
+.search-bar {
+  width: 90%;
+  margin-top: 25px; /* Adjust the margin as needed */
+}
+
+
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 950px; /* Adjust the margin as needed */
+
+
+}
+
+
+.navbar-buttons button {
+  margin-right: 6px;
+}
+.navbar-grid {
+  margin-bottom: 10px;
+}
+
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+padding: 0 10px;
+width:200px;
+}
+
+
+.logo-label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #1d63a9; /* Adjust color as needed */
+  text-shadow: 2px 2px 4px rgb(181, 188, 195);
+}
+
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+
+.nav-button {
+  display: flex;
+  align-items: center;
+}
+
+
+.icon {
+  font-size: 24px;
+}
+
+
+.button-label {
+  margin-left: 5px;
+}
+element.style{
+  width: 400px;
+}

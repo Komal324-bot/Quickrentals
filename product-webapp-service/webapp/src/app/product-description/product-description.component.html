@@ -1,0 +1,57 @@
+<app-navbar2></app-navbar2><div class="container mt-5">
+  <!-- Product Details Card -->
+  <div class="card product-details">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{{ productData.imageUrl }}" alt="Product Image" class="product-img">
+      </div>
+      <div class="col-sm-6">
+        <div class="card-body">
+          <h2 class="card-title">{{ productData.productName }}</h2>
+          <p class="card-text">{{ productData.description }}</p>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="price">Rs.{{ productData.price }}</p>
+          <div class="button-container">
+           
+            <button mat-raised-button color="warn" class="action" style="color:white; background-color: #55C2C3;" (click)="payNow()">Pay Now</button>
+            <button mat-raised-button color="warn" class="action" style="color:white; background-color: #55C2C3;" routerLink="/payButton">Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Similar Products Section -->
+  <div class="card container mt-5">
+    <div class="card-header">
+      <b>SIMILAR PRODUCTS</b>
+    </div>
+    <div class="card-body">
+      <div class="row card-row">
+        <div class="col-sm-4" *ngFor="let cardData of Data">
+          <div class="card example-card">
+            <div class="card-content">
+              <div class="image-container">
+                <img class="card-image" [src]="cardData.imageUrl" alt="Product Image">
+              </div>
+              <div class="content">
+                <p class="product-name"><b>{{ cardData.productName }}</b></p>
+                <p class="price">Rs.{{ cardData.price }}</p>
+                <button mat-raised-button color="warn" class="action" style="color:white; background-color: #55C2C3;" (click)="showParticularproduct()" routerLink="/productDescription/{{cardData.id}}">Rent Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+

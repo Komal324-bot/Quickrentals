@@ -1,0 +1,54 @@
+<app-navbar2></app-navbar2>
+<br>
+<div class="background-image">
+<div class="container">
+    <h3>Edit your profile</h3>
+    <mat-stepper [linear]="isLinear" #stepper class="stepper">
+        <!-- Step 1: Personal Details -->
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup" class="step-form">
+                 <ng-template matStepLabel>Personal Details</ng-template>
+  <div class="form-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Full name" formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName="email" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <input matInput placeholder="Address" formControlName="address" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Password" formControlName="password" required>
+    </mat-form-field>
+  </div>
+  <div class="button-group">
+    <button mat-raised-button color="primary"  matStepperNext>Next</button>
+  </div>
+
+            </form>
+        </mat-step>
+
+        
+        <mat-step>
+           <ng-template matStepLabel>Done</ng-template>
+           <br>
+<p>You have successfully added the details.</p>
+<br>
+<div class="button-group">
+  <button mat-button matStepperPrevious>Back</button>
+  <button mat-raised-button  style="color:white; background-color: #55C2C3;" (click)="stepper.reset()">Reset</button>
+</div>
+        </mat-step>
+    </mat-stepper>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<app-footer></app-footer>

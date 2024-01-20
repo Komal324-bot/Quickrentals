@@ -1,0 +1,32 @@
+
+
+    <app-navbar2></app-navbar2>
+  <div class="profile-container">
+    <h2>Profile Details</h2>
+    <div class="profile-header">
+      <div class="profile-picture">
+        <img src="assets/profile.png" alt="Profile Picture">
+      </div>
+      <div class="profile-details">
+        <h4 class="username">{{newUser.username}}</h4>
+        <p class="email"> {{newUser.email}}</p>
+      </div>
+    </div>
+    <div class="profile-section">
+      <h2>Profile Information</h2>
+      <div class="info">
+        <p><strong>Name:</strong> {{newUser.username}}</p>
+        <div class="line"></div>
+        <p><strong>Email:</strong>  {{newUser.email}}</p>
+        <div class="line"></div>
+        <p><strong>Address:</strong>  {{newUser.address}}</p>
+        <div class="line"></div>
+        <p><strong>Password:</strong> ********</p>
+        <br>
+        <div><button class="edit-button" routerLink="/editprofile">Edit</button></div>
+
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+

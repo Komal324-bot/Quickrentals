@@ -1,0 +1,33 @@
+.footer {
+  background-color: #ede6e6;
+  color: #0C243C;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 15px;
+  position:static;
+  bottom: 0; 
+  width: 100%; 
+  transition: bottom 0.3s ease; /* Add a smooth transition effect */
+}
+
+.footer-icons {
+  display: inline-block;
+  margin: 2px 3px;
+}
+
+.company-info p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.company-info{
+  margin-left: 3px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+

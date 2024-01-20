@@ -1,0 +1,88 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+.angular/cache/
+/node_modules
+/tools/examples/shared/node_modules
+npm-debug.log
+yarn-error.log
+.angular/
+
+
+
+
+
+
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+# Node.js & NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+npm/
+
+# Compiled output
+/dist/
+/dist-server/
+/tmp/
+/out-tsc/
+
+# IDE files
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Testing files
+/coverage/
+
+# Environment variables
+.env
+.env.prod
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# Angular specific files
+*.js.map
+*.js
+*.d.ts
+
+# Caches and intermediates
+.eslintcache
+*.swp

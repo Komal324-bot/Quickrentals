@@ -1,0 +1,51 @@
+/* Reset some default styles */
+
+
+/* Basic styling for the container */
+.container {
+  width: 80%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f4fafa;
+}
+
+/* Styling for the "Edit your profile" heading */
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling for the mat-stepper */
+.stepper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Styling for the step forms */
+.step-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for the form fields container */
+.form-container {
+  width: 100%;
+  display: grid;
+}
+
+/* Styling for buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+ 
+}
